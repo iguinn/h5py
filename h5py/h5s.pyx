@@ -418,7 +418,7 @@ cdef class SpaceID(ObjectID):
 
         Copies a selection from one dataspace to another.
         """
-        H5Sselect_copy(self.id, src_id)
+        H5Sselect_copy(self.id, src_id.id)
 
 
     @with_phil
